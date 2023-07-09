@@ -17,16 +17,16 @@ export const TodoWrapper = () => {
     setTodos([...todos,{id:uuidv4(),task:todo,completed:false,isEditing:false}])
   }
   const toggleComplete=id=>{
-    setTodos(todos.map(todo=>todo.id===id ? {...todo, completed: !todo.completed}:todo))
+    setTodos(todos?.map(todo=>todo.id===id ? {...todo, completed: !todo.completed}:todo))
   }
   const deleteTodo=id=>{
-    setTodos(todos.filter(todo=>todo.id!==id))
+    setTodos(todos?.filter(todo=>todo.id!==id))
   }
   const editTodo=id=>{
-    setTodos(todos.map(todo=>todo.id===id ? {...todo, isEditing: !todo.isEditing}:todo))
+    setTodos(todos?.map(todo=>todo.id===id ? {...todo, isEditing: !todo.isEditing}:todo))
   }
   const editTask=(task,id)=>{
-    setTodos(todos.map(todo=>todo.id===id?{...todo,task,isEditing:!todo.isEditing}:todo))
+    setTodos(todos?.map(todo=>todo.id===id?{...todo,task,isEditing:!todo.isEditing}:todo))
   }
   useEffect(()=>{
     localStorage.setItem('todo',JSON.stringify(todos))
@@ -34,7 +34,7 @@ export const TodoWrapper = () => {
   return (
     <div className='TodoWrapper'>
       <TodoForm addTodo={addTodo}/>
-      {todos.map((todo,index)=>(
+      {todos?.map((todo,index)=>(
         todo.isEditing ?(
           <EditTodoForm editTodo={editTask} task={todo}/>
         ):(
