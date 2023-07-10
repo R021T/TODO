@@ -10,6 +10,9 @@ const getLocalItems=()=>{
   if(data){
     return JSON.parse(localStorage.getItem('todo'))
   }
+  else{
+    return []
+  }
 }
 export const TodoWrapper = () => {
   const [todos,setTodos]=useState(getLocalItems)
