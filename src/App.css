@@ -24,6 +24,12 @@ h1 {
   font-size: 1.75rem;
 }
 
+.Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .TodoWrapper {
   background: #1A1A40;
   border: 1px solid #8758ff;
@@ -62,7 +68,6 @@ h1 {
   border-bottom-right-radius: 5px;
   padding: 0.55rem;
   cursor: pointer;
-  
 }
 
 .Todo {
@@ -91,10 +96,15 @@ h1 {
   text-decoration: line-through;
 }
 
+.Head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h2{
   position: absolute;
   top: 50px;
-  margin-left: -545px;
   font-size: 6em;
   letter-spacing: 15px;
   color: #0e3742;
@@ -119,5 +129,65 @@ h2{
       0 0 40px #8758ff,
       0 0 80px #8758ff,
       0 0 160px #8758ff;
+  }
+}
+
+@media(width<800px){
+  h2{
+    font-size: 75px;
+    margin-left: -25px;
+  }
+
+  .Box{
+    width: 20rem;
+    margin-left: -25px;
+    margin-top: -25px;
+  }
+
+  .TodoInput{
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .TodoInput::placeholder{
+    font-size: 15px;
+  }
+
+  .TodoButton{
+    border-radius: 5px;
+  }
+
+  .Todo{
+    margin-top: 15px;
+  }
+}
+
+@media(width<600px){
+  h2{
+    font-size: 50px;
+    margin-left: -25px;
+  }
+
+  .TodoWrapper{
+    width: 15rem;
+    margin-left: -25px;
+  }
+
+  .TodoInput{
+    margin-bottom: 15px;
+    width: 10rem;
+    border-radius: 5px;
+  }
+
+  .TodoInput::placeholder{
+    font-size: 9px;
+  }
+
+  .TodoButton{
+    border-radius: 5px;
+  }
+
+  .Todo{
+    margin-top: 15px;
   }
 }
