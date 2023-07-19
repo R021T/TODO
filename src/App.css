@@ -37,6 +37,14 @@ h1 {
   padding: 2rem;
   border-radius: 5px;
   -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0008);
+  transition: all 0.2s ease-in-out;
+}
+
+.TodoWrapper:hover{
+  color: #8758ff;
+  box-shadow: 0 0 10px #c5aeff,
+  0 0 20px #8758ff,
+  0 0 40px #8758ff;
 }
 
 .TodoForm {
@@ -134,12 +142,12 @@ h2{
 
 @media(width<700px){
   h2{
-    font-size: 75px;
+    font-size: 50px;
   }
 
   .Box{
     width: 20rem;
-    margin-top: -15px;
+    margin-top: -60px;
   }
 
   .TodoInput{
