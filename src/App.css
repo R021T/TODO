@@ -132,7 +132,7 @@ h2{
   }
 }
 
-@media(width<800px){
+@media(width<600px){
   h2{
     font-size: 75px;
     margin-left: -25px;
@@ -162,7 +162,7 @@ h2{
   }
 }
 
-@media(width<600px){
+@media(width<400px){
   h2{
     font-size: 50px;
     margin-left: -25px;
