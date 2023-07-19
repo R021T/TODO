@@ -132,16 +132,14 @@ h2{
   }
 }
 
-@media(width<600px){
+@media(width<700px){
   h2{
     font-size: 75px;
-    margin-left: -25px;
   }
 
   .Box{
     width: 20rem;
-    margin-left: -25px;
-    margin-top: -25px;
+    margin-top: -15px;
   }
 
   .TodoInput{
@@ -151,36 +149,6 @@ h2{
 
   .TodoInput::placeholder{
     font-size: 15px;
-  }
-
-  .TodoButton{
-    border-radius: 5px;
-  }
-
-  .Todo{
-    margin-top: 15px;
-  }
-}
-
-@media(width<400px){
-  h2{
-    font-size: 50px;
-    margin-left: -25px;
-  }
-
-  .TodoWrapper{
-    width: 15rem;
-    margin-left: -25px;
-  }
-
-  .TodoInput{
-    margin-bottom: 15px;
-    width: 10rem;
-    border-radius: 5px;
-  }
-
-  .TodoInput::placeholder{
-    font-size: 9px;
   }
 
   .TodoButton{
