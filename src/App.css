@@ -167,3 +167,35 @@ h2{
     margin-top: 15px;
   }
 }
+
+@media(height<400px){
+   h2{
+    font-size: 50px;
+    position: fixed;
+    right: 200px;
+    top: 150px;
+  }
+
+   .Box{
+    width: 20rem;
+    margin-top: -227px;
+    margin-left: 400px;
+  }
+
+    .TodoInput{
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .TodoInput::placeholder{
+    font-size: 15px;
+  }
+
+  .TodoButton{
+    border-radius: 5px;
+  }
+
+  .Todo{
+    margin-top: 15px;
+  }
+}
