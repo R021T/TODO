@@ -183,13 +183,12 @@ h2 {
 
   .TodoButton {
     border-radius: 5px;
+    margin-left: 110px;
   }
 
   .Todo {
     margin-top: 15px;
   }
-
-
 }
 
 @media(height<400px) {
@@ -217,19 +216,24 @@ h2 {
 
   .TodoButton {
     border-radius: 5px;
+    margin-left: 110px;
   }
 
   .Todo {
     margin-top: 15px;
   }
 
-
+  footer img{
+    height: 50px;
+  }
 }
+
 footer{
   display: flex;
   z-index: -1;
   margin-top: 2rem;
 }
+
 footer img{
   width: 100%;
   position: fixed;
