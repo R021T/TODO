@@ -1,6 +1,5 @@
 import './App.css';
 import { TodoWrapper } from './components/TodoWrapper';
-import img from "./images/check.png"
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <TodoWrapper/>
      </div>
      <footer>
-      <img src={img}/>
+      <img src="./images/check.png" alt='footer'/>
      </footer>
     </div>
   );
